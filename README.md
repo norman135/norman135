@@ -1,3 +1,3 @@
 🧑🏽Norman R. Mico <br>
-🎓Frontend | Backend | ML & DL<br>
+🎓Frontend | Backend | AI & ML<br>
 📧normanrmico@gmail.com
