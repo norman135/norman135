@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Norman Mico - Software Engineer</title>
+</head>
+<body>
+    <header>
+        <a onclick="findSection(1)" class="header-link"><i class="fa-solid fa-user"></i> Intro</a>
+        <a onclick="findSection(2)" class="header-link"><i class="fa-solid fa-graduation-cap"></i> Skills</a>
+        <a onclick="findSection(3)" class="header-link"><i class="fa-solid fa-book"></i> Projects</a>
+        <a onclick="findSection(4)" class="header-link"><i class="fa-solid fa-phone"></i> Contact</a>
+    </header>
+    <div id="intro" class="section">
+        <div class="image-desc-div">
+            <div class="circular-image">
+                <img src="./images/profile.png" alt="">
+            </div>
+            <div class="description">
+                <h2 class="sub-title">Norman Mico</h2>
+                <div class="sub-desc">A software engineer with fullstack capabilities.<br>Although familiar with front-end technologies, Norman is a bit more back-end oriented and is always interested in how things work under the hood.</div>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="section">
+        <div class="skill-card" style="background-color: rgba(255, 68, 0, 0.5);">
+            <div class="skill-image">
+                <img src="./images/html5.png" alt="">
+            </div>
+            <div class="skill-desc">
+                <h4 class="skill-desc-title">HTML</h4>
+                The main language that powers webpages. Deep knowledge and very many years of experience. Can't go wrong with this one.
+            </div>
+        </div>
+        <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
+            <div class="skill-image">
+                <img src="./images/css3.png" alt="">
+            </div>
+            <div class="skill-desc">
+                <h4 class="skill-desc-title">CSS</h4>
+                Deals with the styling of HTML elements on a webpage. Deep knowledge and valuable experience.
+            </div>
+        </div>
+        <div class="skill-card" style="background-color: rgba(255, 196, 0, 0.5);">
+            <div class="skill-image">
+                <img src="./images/js.png" alt="">
+            </div>
+            <div class="skill-desc">
+                <h4 class="skill-desc-title">JS</h4>
+                Programming language in browser environments, although server-side environments have been implemented. (Node)
+            </div>
+        </div>
+        <div class="skill-card" style="background-color: rgba(189, 118, 255, 0.5);">
+            <div class="skill-image" style="margin-bottom: 35px; margin-top: 35px;">
+                <img src="./images/php.png" alt="">
+            </div>
+            <div class="skill-desc">
+                <h4 class="skill-desc-title">PHP</h4>
+                Back-end scripting languages that has been popular for a long time. Powers Facebook, Wikipedia and Wordpress CMS.
+            </div>
+        </div>
+        <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
+            <div class="skill-image">
+                <img src="./images/python.png" alt="">
+            </div>
+            <div class="skill-desc">
+                <h4 class="skill-desc-title">Python</h4>
+                One of the most sophisticated and popular programming languages. Advanced knowledge and experience.
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="section" >
+        <div class="project">
+            <div class="project-image-space">
+                <div class="project-image">
+                    <img src="./images/profile.png" alt="">
+                </div>
+            </div>
+            <div class="project-desc-space">
+                <h1 class="project-desc-title">Project #1</h1>
+                <div class="project-desc-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse architecto dignissimos voluptate impedit autem praesentium soluta nihil labore blanditiis tempora est, suscipit dolorum, voluptatem quos aut sit, quasi saepe! At. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora mollitia in ab dolorem rem, esse iste omnis laboriosam. Debitis accusamus neque ad, enim suscipit dicta laborum eveniet ut possimus.</div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-desc-space">
+                <h1 class="project-desc-title">Project #2</h1>
+                <div class="project-desc-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse architecto dignissimos voluptate impedit autem praesentium soluta nihil labore blanditiis tempora est, suscipit dolorum, voluptatem quos aut sit, quasi saepe! At. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora mollitia in ab dolorem rem, esse iste omnis laboriosam. Debitis accusamus neque ad, enim suscipit dicta laborum eveniet ut possimus.</div>
+            </div>
+            <div class="project-image-space">
+                <div class="project-image">
+                    <img src="./images/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <div class="contact-social-buttons">
+            <a href="https://github.com/" class="contact-social-button github-button"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://linkedin.com/" class="contact-social-button linkedin-button"><i class="fa-brands fa-linkedin"></i> Linked<b>In</b></a>
+            <a href="https://twitter.com/" class="contact-social-button twitter-button"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        </div>
+        <div class="contact-form-section">
+            <div class="contact-form-form">
+                <form>
+                    <input class="form-input" type="text" name="address" placeholder="Your email or phone"/>
+                    <textarea name="message" class="form-area" placeholder="Your message."></textarea>
+                    <button onclick="getValue()" class="form-submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/7d5af2a4ad.js" crossorigin="anonymous"></script>
+</body>
+</html>

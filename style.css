@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    transition-property: all;
+    transition-duration: 100ms;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+header {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: default;
+    position: fixed;
+    margin-top: -75px;
+    z-index: 2;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0 0 20px 20px rgb(24, 24, 24);
+}
+.header-link {
+    padding: 0px 25px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-link:hover {
+    color: white;
+}
+.section {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+}
+.image-desc-div {
+    width: 75%;
+    height: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+}
+.circular-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.description {
+    align-self: center;
+    width: 60%;
+    margin-left: 50px;
+}
+.sub-title {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.sub-desc {
+    color: rgb(200, 200, 200);
+}
+#skills {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill-card {
+    width: 150px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skill-image img {
+    width: 150px;
+}
+.skill-desc {
+    font-size: 15px;
+}
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.project-image-space {
+    padding: 20px;
+    width: 50%;
+}
+.project-image {
+    width: 100%;
+}
+.project-image img {
+    width: 90%;
+    border-radius: 20px;
+}
+.project-desc-space {
+    width: 50%;
+    padding: 20px;
+    align-self: center;
+}
+.project-desc-title {
+    margin-bottom: 70px;
+}
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+.contact-social-buttons {
+    width: 50%;
+    padding: 20px;
+}
+.contact-social-button {
+    display: block;
+    border: solid 1px grey;
+    border-radius: 50px;
+    width: 75%;
+    padding: 15px;
+    margin: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: grey;
+}
+.github-button {
+    margin-top: 5px;
+}
+.github-button:hover {
+    color: rgb(138, 46, 138);
+    border-color: rgb(126, 52, 126);
+}
+.linkedin-button:hover {
+    color: rgb(39, 75, 141);
+    border-color: rgb(41, 76, 141);
+}
+.twitter-button:hover {
+    color: rgb(64, 187, 224);
+    border-color: rgb(64, 187, 224);
+}
+.contact-form-section {
+    width: 50%;
+    padding: 20px;
+}
+.form-input {
+    width: 80%;
+    margin: 5px;
+    padding: 15px;
+    border: solid 1px grey;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Quicksand';
+}
+.form-area {
+    width: 80%;
+    height: 200px;
+    margin: 5px;
+    padding: 15px;
+    border: solid 1px grey;
+    border-radius: 25px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    resize: none;
+}
+.form-submit {
+    display: block;
+    width: 40%;
+    margin: 5px;
+    padding: 15px;
+    border: solid 1px grey;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
