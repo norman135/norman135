@@ -110,6 +110,10 @@ header {
 .project-desc-title {
     margin-bottom: 70px;
 }
+.section-title {
+    text-align: center;
+    margin-bottom: 75px;
+}
 #contact {
     display: flex;
     flex-direction: row;
@@ -189,3 +193,5 @@ header {
     text-transform: uppercase;
     font-weight: 100;
 }
+
+/* MOBILE */
