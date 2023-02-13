@@ -66,7 +66,7 @@ header {
 #skills {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, calc((100% - 30px) / 5)));
     width: 75%;
     left: 50%;
     transform: translateX(-50%);
@@ -88,7 +88,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+    margin-bottom: 50px;
 }
 .project-image-space {
     padding: 20px;
@@ -108,7 +108,7 @@ header {
     align-self: center;
 }
 .project-desc-title {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .section-title {
     text-align: center;
@@ -195,3 +195,82 @@ header {
 }
 
 /* MOBILE */
+
+@media screen and (max-width: 700px) {
+    .header-link i {
+        font-size: 35px;
+    }
+    .header-link span {
+        display: none;
+    }
+
+    .image-desc-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .description {
+        width: 75%;
+        margin: 0;
+    }
+
+    #skills {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #skills::-webkit-scrollbar {
+    display: none;
+    }
+    .skill-card {
+        flex: 0 0 auto;
+        width: 75px;
+        height: fit-content;
+    }
+    .skill-image img {
+        width: 75px
+    }
+    .skill-desc span {
+        display: none;
+    }
+    .project-image {
+        font-size: 10px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+    .project-image-space {
+        display: none;
+    }
+    .project-desc-space {
+        width: 95%;
+        padding: 5px;
+    }
+
+    #contact {
+        margin-top: -60px;
+        flex-direction: column;
+    }
+    .contact-social-buttons {
+        width: 100%;
+        padding: 0;
+    }
+    .contact-social-button {
+        margin: 25px;
+    }
+    .contact-form-section {
+        width: 100%;
+        padding: 0;
+    }
+    .form-input {
+        margin-bottom: 10px;
+    }
+    .form-submit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
