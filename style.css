@@ -93,6 +93,7 @@ header {
 .project-image-space {
     padding: 20px;
     width: 50%;
+    font-size: 15em;
 }
 .project-image {
     width: 100%;
