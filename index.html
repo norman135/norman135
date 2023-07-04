@@ -12,10 +12,10 @@
 </head>
 <body>
     <header>
-        <a onclick="findSection(1)" class="header-link"><i class="fa-solid fa-user"></i> <span>Intro</span></a>
-        <a onclick="findSection(2)" class="header-link"><i class="fa-solid fa-graduation-cap"></i> <span>Skills</span></a>
-        <a onclick="findSection(3)" class="header-link"><i class="fa-solid fa-book"></i> <span>Services</span></a>
-        <a onclick="findSection(4)" class="header-link"><i class="fa-solid fa-phone"></i> <span>Contact</span></a>
+        <a onclick="scrollToTop()" class="header-link"><i class="fa-solid fa-user"></i> <span>Intro</span></a>
+        <a href="#skills" class="header-link"><i class="fa-solid fa-graduation-cap"></i> <span>Skills</span></a>
+        <a href="#projects" class="header-link"><i class="fa-solid fa-book"></i> <span>Services</span></a>
+        <a href="#contact" class="header-link"><i class="fa-solid fa-phone"></i> <span>Contact</span></a>
     </header>
     <div id="intro" class="section">
         <div class="image-desc-div">
@@ -28,60 +28,75 @@
             </div>
         </div>
     </div>
+    <div class="title-divider">
+        <hr>
+        <h1 class="section-title">SKILLS</h1>
+    </div>
     <div id="skills" class="section">
-        <div class="skill-card" style="background-color: rgba(255, 68, 0, 0.5);">
-            <div class="skill-image">
-                <img src="./images/html5.png" alt="">
+        <h2>Frontend</h2>
+        <div class="skill-group">
+            <div class="skill-card" style="background-color: rgba(255, 68, 0, 0.5);">
+                <div class="skill-image">
+                    <img src="./images/html5.png" alt="">
+                </div>
+                <div class="skill-desc">
+                    <h4 class="skill-desc-title">HTML</h4>
+                    <span>The main language that powers webpages. Deep knowledge and very many years of experience. Can't go wrong with this one.</span>
+                </div>
             </div>
-            <div class="skill-desc">
-                <h4 class="skill-desc-title">HTML</h4>
-                <span>The main language that powers webpages. Deep knowledge and very many years of experience. Can't go wrong with this one.</span>
+            <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
+                <div class="skill-image">
+                    <img src="./images/css3.png" alt="">
+                </div>
+                <div class="skill-desc">
+                    <h4 class="skill-desc-title">CSS</h4>
+                    <span>Deals with the styling of HTML elements on a webpage. Deep knowledge and valuable experience.</span>
+                </div>
             </div>
-        </div>
-        <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
-            <div class="skill-image">
-                <img src="./images/css3.png" alt="">
-            </div>
-            <div class="skill-desc">
-                <h4 class="skill-desc-title">CSS</h4>
-                <span>Deals with the styling of HTML elements on a webpage. Deep knowledge and valuable experience.</span>
-            </div>
-        </div>
-        <div class="skill-card" style="background-color: rgba(255, 196, 0, 0.5);">
-            <div class="skill-image">
-                <img src="./images/js.png" alt="">
-            </div>
-            <div class="skill-desc">
-                <h4 class="skill-desc-title">JS</h4>
-                <span>Programming language in browser environments, although server-side environments have been implemented. (Node)</span>
-            </div>
-        </div>
-        <div class="skill-card" style="background-color: rgba(189, 118, 255, 0.5);">
-            <div class="skill-image" style="margin-bottom: 35px; margin-top: 35px;">
-                <img src="./images/php.png" alt="">
-            </div>
-            <div class="skill-desc">
-                <h4 class="skill-desc-title">PHP</h4>
-                <span>Back-end scripting languages that has been popular for a long time. Powers Facebook, Wikipedia and Wordpress CMS.</span>
+            <div class="skill-card" style="background-color: rgba(255, 196, 0, 0.5);">
+                <div class="skill-image">
+                    <img src="./images/js.png" alt="">
+                </div>
+                <div class="skill-desc">
+                    <h4 class="skill-desc-title">JS</h4>
+                    <span>Programming language in browser environments, although server-side environments have been implemented. (Node)</span>
+                </div>
             </div>
         </div>
-        <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
-            <div class="skill-image">
-                <img src="./images/python.png" alt="">
+        <h2>Backend</h2>
+        <div class="skill-group">
+            <div class="skill-card" style="background-color: rgba(189, 118, 255, 0.5);">
+                <div class="skill-image" style="margin-bottom: 35px; margin-top: 35px;">
+                    <img src="./images/php.png" alt="">
+                </div>
+                <div class="skill-desc">
+                    <h4 class="skill-desc-title">PHP</h4>
+                    <span>Back-end scripting languages that has been popular for a long time. Powers Facebook, Wikipedia and Wordpress CMS.</span>
+                </div>
             </div>
-            <div class="skill-desc">
-                <h4 class="skill-desc-title">Python</h4>
-                <span>One of the most sophisticated and popular programming languages. Advanced knowledge and experience.</span>
+            <div class="skill-card" style="background-color: rgba(0, 102, 255, 0.5);">
+                <div class="skill-image">
+                    <img src="./images/python.png" alt="">
+                </div>
+                <div class="skill-desc">
+                    <h4 class="skill-desc-title">Python</h4>
+                    <span>One of the most sophisticated and popular programming languages. Advanced knowledge and experience.</span>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="title-divider">
+        <hr>
+        <h1 class="section-title">SERVICES</h1>
     </div>
     <div id="projects" class="section" >
         <div class="project">
             <div class="project-image-space">
                 
                 <div class="project-image">
-                    <img src="./images/productdevelopment.png" alt="">
+                    <!-- <img src="./images/productdevelopment.png" alt=""> -->
                     <i class="fa-solid fa-laptop-code"></i>
+                    <i class="fa-regular fa-window-restore"></i>
                 </div>
             </div>
             <div class="project-desc-space">
@@ -96,13 +111,44 @@
             </div>
             <div class="project-image-space">
                 <div class="project-image">
-                    <img src="./images/productenhancement.png" alt="">
+                    <!-- <img src="./images/productenhancement.png" alt=""> -->
                     <i class="fa-solid fa-gears"></i>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image-space">
+                
+                <div class="project-image">
+                    <!-- <img src="./images/productdevelopment.png" alt=""> -->
+                    <i class="fa-solid fa-chart-column"></i>
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+            </div>
+            <div class="project-desc-space">
+                <h1 class="project-desc-title">Data Analytics & Management</h1>
+                <div class="project-desc-desc">Effective data analytics and management solutions are essential for your business's success. As a skilled software engineer, I can provide you with the tools and expertise to harness the power of your data. By implementing robust data collection, organization, and analysis processes, you can gain valuable insights into your business operations, customer behavior, and market trends. These insights enable informed decision-making, identify growth opportunities, optimize efficiency, and drive overall performance. Embracing data analytics and management is crucial in today's competitive landscape, allowing you to make data-driven decisions that propel your business forward and ensure long-term success.</div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-desc-space">
+                <h1 class="project-desc-title">Automation Solutions</h1>
+                <div class="project-desc-desc">Automation is a game-changer for your business, and as a software engineer, I specialize in delivering efficient automation solutions. By leveraging cutting-edge technologies, I can streamline and optimize your repetitive tasks, freeing up valuable time and resources. Through custom automation workflows and intelligent systems, you can enhance productivity, reduce human error, and achieve consistent and reliable results. Automation empowers your team to focus on high-value activities, fostering innovation and strategic growth. Embracing automation not only improves operational efficiency but also enables scalability, cost savings, and a competitive edge in today's fast-paced business landscape. Let me help you unlock the transformative power of automation, revolutionizing the way you work and ensuring your business thrives in the digital age.</div>
+            </div>
+            <div class="project-image-space">
+                <div class="project-image">
+                    <!-- <img src="./images/productenhancement.png" alt=""> -->
+                    <i class="fa-solid fa-robot"></i>
+                    <i class="fa-solid fa-wand-sparkles"></i>
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="section-title">Contact Me</h1>
+    <div class="title-divider">
+        <hr>
+        <h1 class="section-title">CONTACT ME</h1>
+    </div>
     <div id="contact" class="section">
         
         <div class="contact-social-buttons">

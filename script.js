@@ -41,27 +41,10 @@ document.addEventListener("scroll", ()=>{
     setActiveLink()
 })
 
-const findSection = (x) => {
-    if (x === 1) {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    } else if (x === 2) {
-        window.scrollTo({
-            top: introSectionPosition + 1,
-            behavior: "smooth"
-        })
-        setActiveLink()
-    } else if (x === 3) {
-        window.scrollTo({
-            top: skillsSectionPosition + 1,
-            behavior: "smooth"
-        })
-    } else if (x === 4) {
-        window.scrollTo({
-            top: projectsSectionPosition + 1,
-            behavior: "smooth"
-        })
-    }
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+    history.replaceState({}, document.title, window.location.href.split('#')[0])
 }

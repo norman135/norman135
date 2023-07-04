@@ -5,6 +5,9 @@
     transition-property: all;
     transition-duration: 100ms;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: rgb(24, 24, 24);
@@ -18,7 +21,7 @@ header {
     cursor: default;
     position: fixed;
     margin-top: -75px;
-    z-index: 2;
+    z-index: 101;
     background-color: rgb(24, 24, 24);
     box-shadow: 0 0 20px 20px rgb(24, 24, 24);
 }
@@ -63,13 +66,45 @@ header {
 .sub-desc {
     color: rgb(200, 200, 200);
 }
+.title-divider {
+    position: relative;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.title-divider hr {
+    position: absolute;
+    width: 99.8%;
+    top: 20px;
+    z-index: 99;
+    border-color: grey;
+}
+.title-divider h1 {
+    position: absolute;
+    width: fit-content;
+    z-index: 100;
+    background-color: rgb(24, 24, 24);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 7px 15px rgb(24, 24, 24);
+    letter-spacing: 7px;
+}
 #skills {
+    position: relative;
+    width: 100%;
+}
+.section h2 {
+    position: relative;
+    width: fit-content;
+    left: 12.5%;
+}
+.skill-group {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, calc((100% - 30px) / 5)));
     width: 75%;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 75px;
 }
 .skill-card {
     width: 150px;
@@ -214,14 +249,14 @@ header {
         margin: 0;
     }
 
-    #skills {
+    .skill-group {
         display: flex;
         width: 100%;
         height: 200px;
         overflow-x: auto;
         overflow-y: hidden;
     }
-    #skills::-webkit-scrollbar {
+    .skill-group::-webkit-scrollbar {
     display: none;
     }
     .skill-card {
