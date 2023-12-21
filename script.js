@@ -1,16 +1,19 @@
 // MENU SWITCHING EFFECT
 let introSection = document.getElementById("intro")
 let skillsSection = document.getElementById("skills")
+let servicesSection = document.getElementById("services")
 let projectsSection = document.getElementById("projects")
 let contactSection = document.getElementById("contact")
 let introSectionPosition = introSection.scrollHeight
 let skillsSectionPosition = skillsSection.scrollHeight + introSectionPosition
-let projectsSectionPosition = projectsSection.scrollHeight + skillsSectionPosition
+let servicesSectionPosition = servicesSection.scrollHeight + skillsSectionPosition
+let projectsSectionPosition = projectsSection.scrollHeight + servicesSectionPosition
 let contactSectionPosition = contactSection.scrollHeight + projectsSectionPosition
 let introLink = document.getElementsByClassName("header-link")[0]
 let skillsLink = document.getElementsByClassName("header-link")[1]
-let projectsLink = document.getElementsByClassName("header-link")[2]
-let contactLink = document.getElementsByClassName("header-link")[3]
+let servicesLink = document.getElementsByClassName("header-link")[2]
+let projectsLink = document.getElementsByClassName("header-link")[3]
+let contactLink = document.getElementsByClassName("header-link")[4]
 
 const setActiveLink = () => {
     for (let i = 0; i < document.getElementsByClassName("header-link").length; i++) {
@@ -20,6 +23,8 @@ const setActiveLink = () => {
         introLink.style.color = "green"
     } else if (window.scrollY > introSectionPosition && window.scrollY < skillsSectionPosition) {
         skillsLink.style.color = "green"
+    } else if (window.scrollY > skillsSectionPosition && window.scrollY < servicesSectionPosition) {
+        servicesLink.style.color = "green"
     } else if (window.scrollY > skillsSectionPosition && window.scrollY < projectsSectionPosition) {
         projectsLink.style.color = "green"
     } else {
