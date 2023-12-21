@@ -34,6 +34,14 @@ header {
 .header-link:hover {
     color: white;
 }
+#projects a {
+    color: green;
+    text-decoration: none;
+}
+#projects a:hover {
+    color: rgb(2, 204, 2);
+    text-decoration: underline;
+}
 .section {
     width: 100%;
     height: fit-content;
@@ -119,35 +127,77 @@ header {
 .skill-desc {
     font-size: 15px;
 }
-.project {
+.service {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
 }
-.project-image-space {
+.service-image-space {
     padding: 20px;
     width: 50%;
     font-size: 15em;
 }
-.project-image {
+.service-image {
     width: 100%;
 }
-.project-image img {
+.service-image img {
     width: 90%;
     border-radius: 20px;
 }
-.project-desc-space {
+.service-desc-space {
     width: 50%;
     padding: 20px;
     align-self: center;
 }
-.project-desc-title {
+.service-desc-title {
     margin-bottom: 20px;
 }
 .section-title {
     text-align: center;
     margin-bottom: 75px;
+}
+.project-group {
+    padding: 20px;
+}
+.project {
+    border: solid 1px grey;
+    border-radius: 10px;
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 10px;
+}
+.project-right {
+    position: relative;
+    left: 25%;
+    border: solid 1px grey;
+    border-radius: 10px;
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 25px 10px;
+}
+.project-info {
+    display: block;
+    flex-basis: 80%;
+}
+.project-title {
+    position: relative;
+    width: fit-content;
+    left: 0% !important;
+    margin-bottom: 20px;
+}
+.project-image{
+    flex-basis: 20%;
+    align-items: center;
+}
+.project-image img {
+    width: 100%;
+    align-items: center;
 }
 #contact {
     display: flex;
@@ -270,17 +320,17 @@ header {
     .skill-desc span {
         display: none;
     }
-    .project-image {
+    .service-image {
         font-size: 10px;
     }
 
-    .project {
+    .service {
         flex-direction: column;
     }
-    .project-image-space {
+    .service-image-space {
         display: none;
     }
-    .project-desc-space {
+    .service-desc-space {
         width: 95%;
         padding: 5px;
     }
