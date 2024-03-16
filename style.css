@@ -144,6 +144,10 @@ header {
 .service-image img {
     width: 90%;
     border-radius: 20px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .service-desc-space {
     width: 50%;
@@ -323,7 +327,6 @@ header {
     .service-image {
         font-size: 10px;
     }
-
     .service {
         flex-direction: column;
     }
