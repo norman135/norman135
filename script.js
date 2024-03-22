@@ -32,13 +32,57 @@ const setActiveLink = () => {
     }
 }
 
-const getValue = ()=>{
+let form = document.querySelector(".contact-form")
+
+form.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    let emailPhone = document.getElementsByClassName("form-input")[0].value
+    let message = document.getElementsByClassName("form-area")[0].value
+    let errorMessage = document.querySelector(".error-message")
+    errorMessage.style.display = "none"
+
+    if (!emailPhone || emailPhone == "") {
+        errorMessage.style.display = "block"
+        errorMessage.innerHTML = "Check email or phone"
+        return
+    }
+    if (!message || message == "") {
+        errorMessage.style.display = "block"
+        errorMessage.innerHTML = "Check message"
+        return
+    }
     data = {
-        body: document.getElementsByClassName("form-input")[0].value,
+        emailPhone: document.getElementsByClassName("form-input")[0].value,
         message: document.getElementsByClassName("form-area")[0].value
     }
-    localStorage.setItem("msg-data", JSON.stringify(data))
-}
+    
+    axios.post("https://backend.leadaccessnow.com/contactnorman", data)
+    .then(response => {
+        if (response.status === 201) {
+            errorMessage.style.color = "green"
+            errorMessage.innerHTML = "Sent successfully!"
+            errorMessage.style.display = "block"
+        } else {
+            errorMessage.style.display = "block";
+            errorMessage.innerHTML = "Error contacting Norman"
+        }
+    })
+    .catch(error => {
+        errorMessage.style.display = "block";
+        errorMessage.innerHTML = "Error contacting Norman"
+    })
+        
+
+        
+    
+})
+
+// let submitButton = document.querySelector(".form-submit")
+
+// submitButton.addEventListener("click", (e)=>{
+//     e.preventDefault();
+//     form.submit()
+// })
 
 setActiveLink()
 

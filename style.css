@@ -281,6 +281,16 @@ header {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 100;
+    cursor: pointer;
+}
+.form-submit:hover {
+    border-color: rgb(2, 204, 2);
+    color: rgb(2, 204, 2);
+}
+.error-message {
+    color: rgb(255, 101, 101);
+    padding: 15px;
+    display: none;
 }
 
 /* MOBILE */
