@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Between 2 Countries</title>
+</head>
+<body>
+    <form>
+        <span>From</span>
+        <select>
+            <option value="0">Morocco</option>
+            <option value="1">Egypt</option>
+            <option value="2">South Africa</option>
+            <option value="3">Madagascar</option>
+        </select>
+        <span>To</span>
+        <select>
+            <option value="0">Morocco</option>
+            <option value="1">Egypt</option>
+            <option value="2">South Africa</option>
+            <option value="3">Madagascar</option>
+        </select>
+        <button type="submit">Check</button>
+    </form>
+    <div class="result">Result: 0km</div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let form = document.querySelector("form")
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            let result = document.querySelector(".result")
+            result.innerHTML = `Result: Loading...`
+
+            let countryA = parseInt(document.querySelectorAll("select")[0].value)
+            let countryB = parseInt(document.querySelectorAll("select")[1].value)
+
+            axios.post("https://backend.leadaccessnow.com/getdistance", {
+                a: countryA,
+                b: countryB
+            })
+            .then((res)=>{
+                let dist = res.data.dist
+                let result = document.querySelector(".result")
+                result.innerHTML = `Result: ${dist}km`
+            })
+            // 
+        })
+    </script>
+</body>
+</html>
